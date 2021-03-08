@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class CreateHotel extends Component {
+class CreateReview extends Component {
   state = {
     title: '',
     content: ''
@@ -18,18 +18,18 @@ class CreateHotel extends Component {
     return (
       <div className="container">
         <form onSubmit={this.handleSubmit} className="white">
-        <h5 className="grey-text text-darken-3">Sign In</h5>
+        <h5 className="grey-text text-darken-3">Create Review</h5>
         <div className="input-field">
-          <label htmlFor="title">Title</label>
+          <label htmlFor="title">Title of Review</label>
           <input type="text" id='title' onChange={this.handleChange}/>
         </div>
 
         <div className="input-field">
-          <label htmlFor="content">Hotel Content</label>
+          <label htmlFor="content">Review Content</label>
           <textarea id="content" className="materialize-textarea" onChange={this.handleChange}></textarea>
         </div>
         <div className="input-field">
-          <button className="btn pink lighten-1 z-depth">Create</button>
+          <button className="btn purple lighten-1 z-depth">Create</button>
         </div>
         </form>
       </div>
@@ -37,4 +37,4 @@ class CreateHotel extends Component {
   }
 }
 
-export default CreateHotel
+export default CreateReview

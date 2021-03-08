@@ -7,21 +7,23 @@ import SignIn from './components/auth/SignIn';
 import SignUp from './components/auth/SignUp';
 import CreateReview from './components/reviews/CreateReview';
 
-function App() {
-  return (
-    <BrowserRouter>
-      <div className="App">
-        <Navbar />
-        <Switch>
-          <Route exact path="/" component={Dashboard}/>
-          <Route path="/hotel/:id" component={ReviewDetails}/>
-          <Route path='/signin' component={SignIn}/>
-          <Route path='/signup' component={SignUp}/>
-          <Route path='/create' component={CreateReview}/>
-        </Switch>
-      </div>
-    </BrowserRouter>
-  );
+class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <div className="App">
+          <Navbar />
+          <Switch>
+            <Route exact path="/" component={Dashboard}/>
+            <Route path="/hotel/:id" component={ReviewDetails}/>
+            <Route path='/signin' component={SignIn}/>
+            <Route path='/signup' component={SignUp}/>
+            <Route path='/create' component={CreateReview}/>
+          </Switch>
+        </div>
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;
