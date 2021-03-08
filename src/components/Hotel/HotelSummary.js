@@ -9,8 +9,6 @@ const HotelSummary = () => {
         <p className="grey-text">3/8/2021</p>
       </div>
     </div>
-
-
   )
 }
 
