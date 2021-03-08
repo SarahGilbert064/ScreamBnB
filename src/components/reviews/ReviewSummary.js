@@ -1,10 +1,10 @@
 import React from 'react';
 
-const HotelSummary = () => {
+const ReviewSummary = () => {
   return(
-    <div className="card z-depth-0 hotel-summary">
+    <div className="card z-depth-0 review-summary">
       <div className="card-content grey-text text-darken-3">
-        <span className="card-title">Hotel Title</span>
+        <span className="card-title">Review Title</span>
         <p>Posted by ScreamBnB</p>
         <p className="grey-text">3/8/2021</p>
       </div>
@@ -12,4 +12,4 @@ const HotelSummary = () => {
   )
 }
 
-export default HotelSummary;
+export default ReviewSummary;
