@@ -6,6 +6,10 @@ const initState = {
 }
 
 const reviewReducer = (state = initState, action) => {
+  switch (action.type) {
+    case "CREATE_REVIEW":
+      console.log('created review', action.review)
+  }
   return state
 }
 
