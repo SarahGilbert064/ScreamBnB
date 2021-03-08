@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 class CreateReview extends Component {
   state = {
     title: '',
+    location: '',
     content: ''
   }
   handleChange = (e) => {
@@ -22,9 +23,15 @@ class CreateReview extends Component {
       <div className="container">
         <form onSubmit={this.handleSubmit} className="white">
         <h5 className="grey-text text-darken-3">Create Review</h5>
+        
         <div className="input-field">
           <label htmlFor="title">Title of Review</label>
           <input type="text" id='title' onChange={this.handleChange}/>
+        </div>
+
+        <div className="input-field">
+          <label htmlFor="location">Location</label>
+          <input type="text" id='location' onChange={this.handleChange}/>
         </div>
 
         <div className="input-field">

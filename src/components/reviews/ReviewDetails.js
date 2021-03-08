@@ -1,21 +1,46 @@
-import React from 'react'
+import React from 'react';
+import { connect } from 'react-redux';
+import { firestoreConnect } from 'react-redux-firebase';
+import { compose } from 'redux';
 
 const ReviewDetails = (props) => {
-  const id = props.match.params.id;
-  return (
+  const { review } = props;
+  if (review) {
+    return (
     <div className="container section hotel-details">
       <div className="card z-depth-0">
         <div className="card-content">
-          <span className="card-title">Review Title - { id }</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nam neque recusandae voluptatum nulla distinctio temporibus pariatur fuga ipsam, earum optio ipsum. Enim asperiores esse aspernatur, omnis obcaecati reiciendis ipsam.</p>
+          <span className="card-title">{ review.title }</span>
+          <h5>{ review.location }</h5>
+          <p>{ review.content }</p>
         </div>
         <div className="card-action grey lighten-4 grey-text">
-          <div>Posted by ScreamBnB</div>
+          <div>Posted by { review.authorFirstName} { review.authorLastName }</div>
           <div>3/8/2021</div>
         </div>
       </div>
     </div>
-  )
+    )
+  } else {
+    return (
+      <div className="container center">
+        <p>Loading reviews.....</p>
+      </div>
+    )
+  }
 }
 
-export default ReviewDetails
+const mapStateToProps = (state, ownProps) => {
+  const id = ownProps.match.params.id
+  const reviews = state.firestore.data.reviews
+  const review = reviews ? reviews[id] : null
+  return {
+    review: review
+  }
+}
+export default compose(
+  connect(mapStateToProps),
+  firestoreConnect([
+    { collection: 'reviews' }
+  ])
+)(ReviewDetails)

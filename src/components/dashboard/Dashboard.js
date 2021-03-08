@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import Notifications from './Notifications';
 import ReviewList from '../reviews/ReviewList';
 import { connect } from 'react-redux';
+import { firestoreConnect } from 'react-redux-firebase';
+import { compose } from 'redux';
 
 class Dashboard extends Component {
   render(){
-    // console.log(this.props);
 
     const { reviews } = this.props;
 
@@ -27,9 +28,15 @@ class Dashboard extends Component {
 }
 
 const mapStateToProps = (state) => {
+  console.log(state);
   return {
-    reviews: state.review.reviews
+    reviews: state.firestore.ordered.reviews
   }
 }
 
-export default connect(mapStateToProps)(Dashboard);
+export default compose(
+  connect(mapStateToProps), 
+  firestoreConnect([
+    { collection: 'reviews' }
+  ])
+)(Dashboard);
