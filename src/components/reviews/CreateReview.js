@@ -16,13 +16,12 @@ class CreateReview extends Component {
   }
   handleSubmit = (e) => {
     e.preventDefault();
-    // console.log(this.state)
     this.props.createReview(this.state)
   }
   render() {
     const { auth } = this.props;
     if(!auth.uid) return <Redirect to='/signin' />
-    
+
     return (
       <div className="container">
         <form onSubmit={this.handleSubmit} className="white">
