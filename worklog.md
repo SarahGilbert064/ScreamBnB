@@ -35,3 +35,5 @@ BELOW THIS LINE IS WORK FOR NEW PROJECT
 3/8/2021
 
 10:40am -following along with tutorial, just added first commit to new project
+
+4:20pm - watching tutorial on firebase auth
