@@ -48,3 +48,5 @@ BELOW THIS LINE IS WORK FOR NEW PROJECT
 11:30am - adding a few hotels to firebase database 
 
 2:30pm - watching tutorial on firebase data query
+
+3:45pm - still trying to figure out how to access data that is directly put into firestore database

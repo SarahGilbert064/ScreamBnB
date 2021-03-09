@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import SignedInLinks from './SignedInLinks';
 import SignedOutLinks from './SignedOutLinks';
 import { connect } from 'react-redux';
-import HotelList from '../hotels/HotelList';
 
 const Navbar = (props) => {
   const { auth, profile } = props;
