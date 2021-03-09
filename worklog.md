@@ -37,3 +37,8 @@ BELOW THIS LINE IS WORK FOR NEW PROJECT
 10:40am -following along with tutorial, just added first commit to new project
 
 4:20pm - watching tutorial on firebase auth
+
+-----------------------------------------------------------------------------------------------------------------------
+3/9/2021
+
+8:30am - watching tutorial about route guarding
