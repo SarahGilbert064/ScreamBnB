@@ -17,6 +17,7 @@ class CreateReview extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.createReview(this.state)
+    this.props.history.push('/');
   }
   render() {
     const { auth } = this.props;
