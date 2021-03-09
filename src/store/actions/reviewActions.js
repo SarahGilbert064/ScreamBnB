@@ -1,5 +1,5 @@
 export const createReview = (review) => {
-  return (dispatch, getState, {getfirebase, getFirestore}) => {
+  return (dispatch, getState, {getFirestore}) => {
     //make async call to database
     const firestore = getFirestore();
     firestore.collection('reviews').add({

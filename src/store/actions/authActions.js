@@ -1,5 +1,4 @@
 export const signIn = (credentials) => {
-
   return (dispatch, getState, {getFirebase}) => {
     const firebase = getFirebase();
 
@@ -38,7 +37,7 @@ export const signUp = (newUser) => {
         firstName: newUser.firstName,
         lastName: newUser.lastName,
         initials: newUser.firstName[0] + newUser.lastName[0]
-      })
+      });
     }).then(() => {
       dispatch({ type: 'SIGNUP_SUCCESS' })
     }).catch(err => {
