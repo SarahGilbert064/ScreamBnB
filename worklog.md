@@ -42,3 +42,5 @@ BELOW THIS LINE IS WORK FOR NEW PROJECT
 3/9/2021
 
 8:30am - watching tutorial about route guarding
+
+11:00am - change firestore security rules for logged in users
