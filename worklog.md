@@ -44,3 +44,5 @@ BELOW THIS LINE IS WORK FOR NEW PROJECT
 8:30am - watching tutorial about route guarding
 
 11:00am - change firestore security rules for logged in users
+
+11:30am - adding a few hotels to firebase database 
