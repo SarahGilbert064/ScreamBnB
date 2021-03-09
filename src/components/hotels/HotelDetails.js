@@ -5,7 +5,7 @@ import { compose } from 'redux';
 import { Redirect } from 'react-router-dom';
 
 const HotelDetails = (props) => {
-  const { hotel } = props;
+  const { hotel, auth } = props;
     if(!auth.uid) return <Redirect to='/signin' />
   if (hotel) {
     return (
