@@ -9,7 +9,7 @@ import HotelList from '../hotels/HotelList';
 class Dashboard extends Component {
   render(){
 
-    const { reviews, auth } = this.props;
+    const { reviews, hotels, auth } = this.props;
     if(!auth.uid) return <Redirect to='/signin' />
 
     return(
@@ -17,14 +17,14 @@ class Dashboard extends Component {
 
         <div className="row">
           <div className="col s12 m6">
-            {/* <HotelList hotels={hotels} /> */}
+            <HotelList hotels={hotels}/>
           </div>
 
-          {/* <div className='row'> */}
+          
             <div className="col s12 m5 offset-m1">
               <ReviewList reviews={reviews} />
             </div>
-          {/* </div> */}
+          
           
         </div>
       </div>
@@ -35,7 +35,7 @@ class Dashboard extends Component {
 const mapStateToProps = (state) => {
   return {
     reviews: state.firestore.ordered.reviews,
-    // hotels: state.firestore.hotels,
+    hotels: state.hotel.hotels,
     auth: state.firebase.auth
   }
 }

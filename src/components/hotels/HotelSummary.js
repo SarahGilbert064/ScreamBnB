@@ -6,6 +6,7 @@ const HotelSummary = ({hotel}) => {
       <div className="card-content grey-text text-darken-3">
         <span className='card-name'>{hotel.name}</span>
         <h5>Location: {hotel.location}</h5>
+        <p>{hotel.history}</p>
       </div>
     </div>
   )
