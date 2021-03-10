@@ -9,13 +9,16 @@ const HotelDetails = (props) => {
     if(!auth.uid) return <Redirect to='/signin' />
   if (hotel) {
     return (
-    <div className="container section hotel-details">
-      <div className="card z-depth-0">
+    <div className="container section hotel-details center">
+      <div className="card red-text text-darken-3 z-depth-0">
         <div className="car-history">
-          <span className="card-name">{hotel.name}</span>
-          <h5>{ hotel.location }</h5>
-          <p>{ hotel.history }</p>
-          <p>{ hotel.toBook }</p>
+          <span className="card-name"><h4>{hotel.name}</h4></span>
+            <h6>{ hotel.location }</h6>
+            <p>{ hotel.history }</p>
+
+          <div className="card-action grey lighten-4 black-text">
+            <p>{ hotel.toBook }</p>
+          </div>
         </div>
       </div>
     </div>

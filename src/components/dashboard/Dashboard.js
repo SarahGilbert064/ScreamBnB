@@ -5,6 +5,7 @@ import { firestoreConnect } from 'react-redux-firebase';
 import { compose } from 'redux';
 import { Redirect } from 'react-router-dom';
 import HotelList from '../hotels/HotelList';
+import logo from '../../img/logo.png';
 // import HotelDetails from '../hotels/HotelDetails';
 
 class Dashboard extends Component {
@@ -17,7 +18,8 @@ class Dashboard extends Component {
       <div className="dashboard container">
 
         <div className="row">
-          <div className="col s12 m6">
+          <div className="col s12 m6 center">
+          <img src={logo} width="350" height="300"/>
             <HotelList hotels={hotels}/>
           </div>
           
