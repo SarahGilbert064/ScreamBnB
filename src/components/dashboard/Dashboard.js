@@ -10,6 +10,7 @@ class Dashboard extends Component {
   render(){
 
     const { reviews, hotels, auth } = this.props;
+    // console.log(hotels);
     if(!auth.uid) return <Redirect to='/signin' />
 
     return(
@@ -35,7 +36,7 @@ class Dashboard extends Component {
 const mapStateToProps = (state) => {
   return {
     reviews: state.firestore.ordered.reviews,
-    hotels: state.hotel.hotels,
+    hotels: state.firestore.ordered.hotels,
     auth: state.firebase.auth
   }
 }
@@ -44,6 +45,6 @@ export default compose(
   connect(mapStateToProps), 
   firestoreConnect([
     { collection: 'reviews', orderBy: ['createdAt', 'desc']},
-    // { collection: 'hotels' }
+    { collection: 'hotels' }
   ])
 )(Dashboard);

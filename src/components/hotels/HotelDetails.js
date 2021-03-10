@@ -15,7 +15,7 @@ const HotelDetails = (props) => {
           <span className="card-name">{hotel.name}</span>
           <h5>{ hotel.location }</h5>
           <p>{ hotel.history }</p>
-          {/* <p>{ hotel.toBook }</p> */}
+          <p>{ hotel.toBook }</p>
         </div>
       </div>
     </div>
