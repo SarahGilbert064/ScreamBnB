@@ -52,3 +52,8 @@ BELOW THIS LINE IS WORK FOR NEW PROJECT
 3:45pm - still trying to figure out how to access data that is directly put into firestore database
 
 5:15pm - chatted with shawn for awhile, was able to hard code in hotel data but going to keep researching/trying to access data from firestore
+
+------------------------------------------------------------------------------------------------------------------------
+3/10/2021
+
+8:00am -assisting another classmate (Tawnee) with redirecting in her project
