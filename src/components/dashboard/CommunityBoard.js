@@ -6,9 +6,8 @@ import { compose } from 'redux';
 import { Redirect } from 'react-router-dom';
 import HotelList from '../hotels/HotelList';
 import logo from '../../img/logo.png';
-// import HotelDetails from '../hotels/HotelDetails';
 
-class Dashboard extends Component {
+class CommunityBoard extends Component {
   render(){
 
     const { reviews, hotels, auth } = this.props;
@@ -19,10 +18,10 @@ class Dashboard extends Component {
 
         <div className="row center">
         <img src={logo} width="350" height="300"/>
-
-          {/* <div className="col s12 m5 offset-m1">
+          <div className="col s12 m5 offset-m1">
             <ReviewList reviews={reviews} />
-          </div> */}
+          </div>
+          
         </div>
       </div>
     )
@@ -43,4 +42,4 @@ export default compose(
     { collection: 'reviews', orderBy: ['createdAt', 'desc']},
     { collection: 'hotels' }
   ])
-)(Dashboard);
+)(CommunityBoard);

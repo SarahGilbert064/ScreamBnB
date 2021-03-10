@@ -10,6 +10,7 @@ import CreateReview from './components/reviews/CreateReview';
 import HotelList from './components/hotels/HotelList';
 import HotelSummary from './components/hotels/HotelSummary';
 import BrowseHotels from './components/dashboard/BrowseHotels';
+import CommunityBoard from './components/dashboard/CommunityBoard';
 
 
 class App extends Component {
@@ -25,7 +26,7 @@ class App extends Component {
             <Route path='/signin' component={SignIn}/>
             <Route path='/signup' component={SignUp}/>
             <Route path='/browsehotels' component={BrowseHotels}/>
-            {/* <Route path='/hotelsummary' component={HotelSummary}/> */}
+            <Route path='/communityboard' component={CommunityBoard}/>
             <Route path='/create' component={CreateReview}/>
           </Switch>
         </div>
