@@ -4,6 +4,7 @@ import { firestoreConnect } from 'react-redux-firebase';
 import { compose } from 'redux';
 import { Redirect } from 'react-router-dom';
 import logo from '../../img/logo.png';
+import storage from '../../config/fbConfig';
 
 const HotelDetails = (props) => {
   const { hotel, auth } = props;
@@ -13,10 +14,11 @@ const HotelDetails = (props) => {
     <div className="container section hotel-details center">
       <img src={logo} width="230" height="185"/>
       <div className="card red-text text-darken-3 z-depth-0">
-        <div className="car-history">
+        <div className="card-history ">
           <span className="card-name"><h4>{hotel.name}</h4></span>
             <h6>{ hotel.location }</h6>
             <p>{ hotel.history }</p>
+            <img src={hotel.imgUrl} max-width="100" max-height="100"></img>
 
           <div className="card-action grey lighten-4 black-text">
             <p>Please visit  { hotel.toBook }  to book your stay.</p>
