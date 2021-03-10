@@ -1,0 +1,7 @@
+[
+      {"id": "1", "name": "The Cecil Hotel", "location": "Los Angeles, California"},
+      {"id": "2", "name": "The Idanha", "location": "Boise, Idaho"}
+]
+
+// import * as data from './store/hotel.json';
+// data.map(......)

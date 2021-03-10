@@ -50,3 +50,5 @@ BELOW THIS LINE IS WORK FOR NEW PROJECT
 2:30pm - watching tutorial on firebase data query
 
 3:45pm - still trying to figure out how to access data that is directly put into firestore database
+
+5:15pm - chatted with shawn for awhile, was able to hard code in hotel data but going to keep researching/trying to access data from firestore

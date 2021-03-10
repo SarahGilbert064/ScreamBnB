@@ -9,19 +9,22 @@ import HotelList from '../hotels/HotelList';
 class Dashboard extends Component {
   render(){
 
-    const { reviews, hotels, auth } = this.props;
+    const { reviews, auth } = this.props;
     if(!auth.uid) return <Redirect to='/signin' />
 
     return(
       <div className="dashboard container">
+
         <div className="row">
           <div className="col s12 m6">
-            <HotelList hotels={hotels} />
+            {/* <HotelList hotels={hotels} /> */}
           </div>
 
-          <div className="col s12 m5 offset-m1">
-            <ReviewList reviews={reviews} />
-          </div>
+          {/* <div className='row'> */}
+            <div className="col s12 m5 offset-m1">
+              <ReviewList reviews={reviews} />
+            </div>
+          {/* </div> */}
           
         </div>
       </div>
@@ -30,10 +33,9 @@ class Dashboard extends Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log(state);
   return {
     reviews: state.firestore.ordered.reviews,
-    hotels: state.firestore.hotels,
+    // hotels: state.firestore.hotels,
     auth: state.firebase.auth
   }
 }
@@ -42,6 +44,6 @@ export default compose(
   connect(mapStateToProps), 
   firestoreConnect([
     { collection: 'reviews', orderBy: ['createdAt', 'desc']},
-    { collection: 'hotels' }
+    // { collection: 'hotels' }
   ])
 )(Dashboard);
