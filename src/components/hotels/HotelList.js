@@ -1,11 +1,14 @@
-import React, {useState, useEffect} from 'react';
+import React, { Component } from 'react';
 import HotelSummary from './HotelSummary';
 import { Link } from 'react-router-dom';
-import firebase from '../../config/fbConfig';
-// import { useSelector } from 'react-redux';
-
+import HotelDetails from './HotelDetails';
+import { connect } from 'react-redux';
+import { firestoreConnect } from 'react-redux-firebase';
+import { compose } from 'redux';
+import { Redirect } from 'react-router-dom';
 
 const HotelList = ({hotels}) => {
+  
   return (
     <div className="hotel-list section">
       { hotels && hotels.map(hotel => {

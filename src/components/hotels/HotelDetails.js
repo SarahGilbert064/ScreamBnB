@@ -31,7 +31,7 @@ const HotelDetails = (props) => {
 
 const mapStateToProps = (state, ownProps) => {
   const id = ownProps.match.params.id 
-  const hotels = state.hotel.hotels 
+  const hotels = state.firestore.data.hotels 
   const hotel = hotels ? hotels[id] : null
   return {
     hotel: hotel,

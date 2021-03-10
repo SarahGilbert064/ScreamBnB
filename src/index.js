@@ -19,9 +19,7 @@ const store = createStore(rootReducer,
   )
 );
 
-store.subscribe(() =>
-  console.log(store.getState())
-);
+
 
 store.firebaseAuthIsReady.then(() => {
   ReactDOM.render(

@@ -5,12 +5,12 @@ import { firestoreConnect } from 'react-redux-firebase';
 import { compose } from 'redux';
 import { Redirect } from 'react-router-dom';
 import HotelList from '../hotels/HotelList';
+// import HotelDetails from '../hotels/HotelDetails';
 
 class Dashboard extends Component {
   render(){
 
     const { reviews, hotels, auth } = this.props;
-    // console.log(hotels);
     if(!auth.uid) return <Redirect to='/signin' />
 
     return(
@@ -20,13 +20,10 @@ class Dashboard extends Component {
           <div className="col s12 m6">
             <HotelList hotels={hotels}/>
           </div>
-
           
-            <div className="col s12 m5 offset-m1">
-              <ReviewList reviews={reviews} />
-            </div>
-          
-          
+          <div className="col s12 m5 offset-m1">
+            <ReviewList reviews={reviews} />
+          </div>
         </div>
       </div>
     )
