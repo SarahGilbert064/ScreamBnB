@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
 import { compose } from 'redux';
 import { Redirect } from 'react-router-dom';
+import logo from '../../img/logo.png';
 
 const HotelDetails = (props) => {
   const { hotel, auth } = props;
@@ -10,6 +11,7 @@ const HotelDetails = (props) => {
   if (hotel) {
     return (
     <div className="container section hotel-details center">
+      <img src={logo} width="230" height="185"/>
       <div className="card red-text text-darken-3 z-depth-0">
         <div className="car-history">
           <span className="card-name"><h4>{hotel.name}</h4></span>
@@ -17,7 +19,7 @@ const HotelDetails = (props) => {
             <p>{ hotel.history }</p>
 
           <div className="card-action grey lighten-4 black-text">
-            <p>{ hotel.toBook }</p>
+            <p>Please visit  { hotel.toBook }  to book your stay.</p>
           </div>
         </div>
       </div>

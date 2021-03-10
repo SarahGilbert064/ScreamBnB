@@ -23,9 +23,9 @@ class Dashboard extends Component {
             <HotelList hotels={hotels}/>
           </div>
           
-          <div className="col s12 m5 offset-m1">
+          {/* <div className="col s12 m5 offset-m1">
             <ReviewList reviews={reviews} />
-          </div>
+          </div> */}
         </div>
       </div>
     )

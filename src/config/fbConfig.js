@@ -1,6 +1,7 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
+import 'firebase/storage';
 
 var firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
@@ -15,8 +16,11 @@ var firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+const storage = firebase.storage();
 // const db = firebase.firestore();
 firebase.firestore().settings({ timestampsInSnapshots: true });
 
 
-export default firebase;
+export {
+  storage, firebase as default
+}
