@@ -7,6 +7,10 @@ import HotelDetails from './components/hotels/HotelDetails';
 import SignIn from './components/auth/SignIn';
 import SignUp from './components/auth/SignUp';
 import CreateReview from './components/reviews/CreateReview';
+import HotelList from './components/hotels/HotelList';
+import HotelSummary from './components/hotels/HotelSummary';
+import BrowseHotels from './components/dashboard/BrowseHotels';
+
 
 class App extends Component {
   render() {
@@ -20,6 +24,8 @@ class App extends Component {
             <Route path="/hotel/:id" component={HotelDetails}/>
             <Route path='/signin' component={SignIn}/>
             <Route path='/signup' component={SignUp}/>
+            <Route path='/browsehotels' component={BrowseHotels}/>
+            {/* <Route path='/hotelsummary' component={HotelSummary}/> */}
             <Route path='/create' component={CreateReview}/>
           </Switch>
         </div>

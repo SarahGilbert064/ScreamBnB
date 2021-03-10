@@ -6,7 +6,6 @@ const HotelSummary = ({hotel}) => {
       <div className="card-content red-text text-darken-3">
         <span className='card-name'><h4>{hotel.name}</h4></span>
         <h6>Location: {hotel.location}</h6>
-        {/* <p>{hotel.history}</p> */}
       </div>
     </div>
   )

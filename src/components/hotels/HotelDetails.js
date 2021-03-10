@@ -20,9 +20,8 @@ const HotelDetails = (props) => {
             <p>{ hotel.history }</p>
             <img src={hotel.imgUrl} max-width="100" max-height="100"></img>
 
-          <div className="card-action grey lighten-4 black-text">
-            
-
+          <div className="card-action grey lighten-5 black-text">
+            <p>{hotel.bookInfo}</p>
             <a href={hotel.link}>Click here to book!</a>
           </div>
         </div>
