@@ -20,7 +20,7 @@ ScreamBnB is a hotel, motel, and BnB booking sight for those who want to spice u
 
 ## Component Tree Diagram
 
-<img src="src/ComponentDiagram.png">
+<img src="componentdiagram.png">
 
 </center>
 
