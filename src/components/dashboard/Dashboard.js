@@ -16,13 +16,8 @@ class Dashboard extends Component {
 
     return(
       <div className="dashboard container">
-
         <div className="row center">
-        <img src={logo} width="350" height="300"/>
-
-          {/* <div className="col s12 m5 offset-m1">
-            <ReviewList reviews={reviews} />
-          </div> */}
+          <img src={logo} width="450" height="400"/>
         </div>
       </div>
     )

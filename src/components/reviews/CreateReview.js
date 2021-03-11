@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { createReview } from '../../store/actions/reviewActions';
 import { connect } from 'react-redux';
 import { Redirect } from "react-router-dom";
+import logo from '../../img/logo.png';
 
 class CreateReview extends Component {
   state = {
@@ -24,7 +25,8 @@ class CreateReview extends Component {
     if(!auth.uid) return <Redirect to='/signin' />
 
     return (
-      <div className="container">
+      <div className="container center">
+        <img src={logo} width="250" height="200"/>
         <form onSubmit={this.handleSubmit} className="white">
         <h5 className="grey-text text-darken-3">Create Review</h5>
         

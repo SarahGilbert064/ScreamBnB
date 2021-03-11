@@ -39,3 +39,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
   border-color: darkred;
   box-shadow: none;
 }
+
+/* #hotelStyle {
+  background-color: darkred;
+} */

@@ -21,6 +21,7 @@ class BrowseHotels extends Component {
         <img src={logo} width="350" height="300"/>
           <div className="col s12 m6 center">
             <HotelList hotels={hotels}/>
+            
           </div>
           
         </div>
