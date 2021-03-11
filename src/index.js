@@ -19,8 +19,6 @@ const store = createStore(rootReducer,
   )
 );
 
-
-
 store.firebaseAuthIsReady.then(() => {
   ReactDOM.render(
     <>

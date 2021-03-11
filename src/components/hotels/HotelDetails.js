@@ -13,14 +13,14 @@ const HotelDetails = (props) => {
     return (
     <div className="container section hotel-details center">
       <img src={logo} width="230" height="185"/>
-      <div className="card red-text text-darken-3 z-depth-0">
-        <div className="card-history ">
+      <div className="card red-text text-darken-3 grey lighten-2 z-depth-0">
+        <div className="card-history">
           <span className="card-name"><h4>{hotel.name}</h4></span>
             <h6>{ hotel.location }</h6>
             <p>{ hotel.history }</p>
             <img src={hotel.imgUrl} max-width="100" max-height="100"></img>
 
-          <div className="card-action grey lighten-5 black-text">
+          <div className="card-action grey darken-3 black-text">
             <p>{hotel.bookInfo}</p>
             <a href={hotel.link}>Click here to book!</a>
           </div>

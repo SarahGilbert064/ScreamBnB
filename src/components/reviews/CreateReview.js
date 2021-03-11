@@ -28,7 +28,7 @@ class CreateReview extends Component {
       <div className="container center">
         <img src={logo} width="250" height="200"/>
         <form onSubmit={this.handleSubmit} className="white">
-        <h5 className="grey-text text-darken-3">Create Review</h5>
+        <h5 className="red-text text-darken-3">Share Some Spooky Stuff!</h5>
         
         <div className="input-field">
           <label htmlFor="title">Title of Review</label>

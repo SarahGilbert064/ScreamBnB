@@ -40,6 +40,17 @@ textarea.materialize-textarea:focus:not([readonly]) {
   box-shadow: none;
 }
 
-/* #hotelStyle {
-  background-color: darkred;
-} */
+.card-content {
+  background: url('./img/mist.jpg') no-repeat;
+  border-radius: inherit;
+  border-style: groove;
+  border-color: silver;
+}
+
+h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  font-style: italic;
+  border-radius: inherit;
+  border-style: groove;
+}

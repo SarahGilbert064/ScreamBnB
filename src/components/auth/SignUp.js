@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { signUp } from '../../store/actions/authActions';
+import logo from '../../img/logo.png';
 
 class SignUp extends Component {
   state = {
@@ -27,7 +28,8 @@ class SignUp extends Component {
     if(auth.uid) return <Redirect to='/' />
 
     return (
-      <div className="container">
+      <div className="container center">
+        <img src={logo} width="230" height="185"/>
         <form onSubmit={this.handleSubmit} className="white">
         <h5 className="grey-text text-darken-3">Sign Up</h5>
         <div className="input-field">

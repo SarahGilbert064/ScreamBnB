@@ -17,11 +17,11 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 const storage = firebase.storage();
-const gsReference = storage.refFromURL('gs://screambnb-1bf37.appspot.com/cecil.jfif');
+const db = firebase.firestore();
 
 firebase.firestore().settings({ timestampsInSnapshots: true });
 
 
 export {
-  storage, gsReference, firebase as default
+  storage, db, firebase as default
 }
