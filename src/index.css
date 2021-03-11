@@ -51,6 +51,29 @@ h3 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bolder;
   font-style: italic;
+  /* border-radius: inherit;
+  border-style: groove; */
+}
+
+#brand-logo {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#card-title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+
+.card-history {
   border-radius: inherit;
   border-style: groove;
+  border-color: black;
+}
+
+#card-history {
+  border-radius: inherit;
+  border-style: groove;
+  border-color: black;
 }

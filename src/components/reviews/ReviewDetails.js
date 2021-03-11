@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
 import { compose } from 'redux';
 import { Redirect } from "react-router-dom";
+import logo from '../../img/logo.png';
 import moment from 'moment';
 
 const ReviewDetails = (props) => {
@@ -10,14 +11,15 @@ const ReviewDetails = (props) => {
     if(!auth.uid) return <Redirect to='/signin' />
   if (review) {
     return (
-    <div className="container section hotel-details">
-      <div className="card z-depth-0">
-        <div className="card-content">
-          <span className="card-title">{ review.title }</span>
-          <h5>{ review.location }</h5>
-          <p>{ review.content }</p>
+    <div className="container section hotel-details center">
+      <img src={logo} width="230" height="185"/>
+      <div className="card red-text text-darken-3 grey lighten-2 z-depth-0" id="card-history">
+        <div className="card-review">
+          <span className="card-span" id='card-title'><h3>{ review.title }</h3></span>
+          <p>{ review.location }</p>
+          <h4>{ review.content }</h4>
         </div>
-        <div className="card-action grey lighten-4 grey-text">
+        <div className="card-action grey darken-3 black-text">
           <div>Posted by { review.authorFirstName} { review.authorLastName }</div>
           <div>{moment(review.createdAt.toDate()).calendar()}</div>
         </div>
