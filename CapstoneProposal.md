@@ -9,16 +9,16 @@ ScreamBnB is a hotel, motel, and BnB booking sight for those who want to spice u
 
 List the absolute minimum features the project requires to meet this purpose or goal:
 
-* User authenication for those who want to leave a review on their stay and/or add to the fanbase 'suggestions' list
-* Built in database with information on haunted places, their history, location, and reviews
-* Information/links for history and booking a stay
+* User authenication for those who want to leave a review on their stay and/or add to the community board list
+* Built in database using firestore with information on haunted hotels around the US
+* Information, photos, and links for booking a stay
 
 What tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? List them all here. Be specific.
 
 * ReactJS 
 * Redux
-* Bootstrap
-* NoSQL
+* Material-UI Framework
+* Firestore
 * Firebase
 
 If you finish developing the minimum viable product (MVP) with time to spare, what will you work on next? Describe these features here: Be specific.
