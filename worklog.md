@@ -59,3 +59,5 @@ BELOW THIS LINE IS WORK FOR NEW PROJECT
 8:00am -assisting another classmate (Tawnee) with redirecting in her project
 
 11:05am - researching how to connect images in firebase storage to cloud firestore collections
+
+8:00pm - fixing component diagram issue
