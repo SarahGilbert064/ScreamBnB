@@ -60,4 +60,4 @@ BELOW THIS LINE IS WORK FOR NEW PROJECT
 
 11:05am - researching how to connect images in firebase storage to cloud firestore collections
 
-8:00pm - fixing component diagram issue
+8:00pm - fixing component diagram issue//making another change to fix this issue
